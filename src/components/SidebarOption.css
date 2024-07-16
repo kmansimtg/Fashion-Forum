@@ -1,12 +1,20 @@
 .sidebarOptions {
     display: flex;
     flex-direction: column;
+  
+   
+  
   }
   .sidebarOption {
     display: flex;
     align-items: center;
     padding: 10px;
     cursor: pointer;
+    /* Added border property */
+    border-radius: 20px;
+   border: 1px solid gray; 
+   background-color:white;
+   
   }
   
   .sidebarOption:hover {
@@ -28,6 +36,8 @@
     color: gray;
     font-weight: 400;
     font-size: 13px;
+   
+  
   }
   
   .sidebarOption > .text {

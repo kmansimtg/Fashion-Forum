@@ -1,5 +1,6 @@
 import { Add } from "@material-ui/icons";
 import React from "react";
+import { Link } from "react-router-dom";
 import "./SidebarOption.css";
 import RewardIcon from './Images/Reward.png'
 import LeaderIcon from './Images/Leader.png'
@@ -20,11 +21,14 @@ function SidebarOptions() {
       </img>
         <h3>LeaderBoard</h3>
       </div>
-      <div className="sidebarOption">
-      <img className="h-[30px]"src={RewardIcon}>
-      </img>
+      
+      <div>
+      <Link to="src\components\RewardsPage.js" className="sidebarOption">
+        <img className="h-[30px]" src={RewardIcon} alt="Rewards Icon" />
         <h3>Your Rewards</h3>
+      </Link>
       </div>
+      
 
       <div className="sidebarOption">
       <img className="h-[30px]"src={SavedIcon}>

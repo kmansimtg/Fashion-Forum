@@ -1,0 +1,118 @@
+/* reward-page.css */
+.rewards-container {
+    background-color: #fff5e1;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    margin: auto;
+  }
+  
+  .rewards-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffdfba;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .profile-image {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .faq-icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .rewards-title {
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  .points-card {
+    background-color: #ff6699;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .points-header {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .points-amount {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .points-equivalent {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .points-progress-bar {
+    background-color: #ffc1e3;
+    border-radius: 10px;
+    height: 10px;
+    overflow: hidden;
+  }
+  
+  .points-progress {
+    background-color: #ffbf00;
+    height: 100%;
+  }
+  
+  .actions-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .action-card {
+    background-color: #ffdfba;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 45%;
+  }
+  
+  .action-icon {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .action-text {
+    font-size: 16px;
+  }
+  
+  .referral-section {
+    background-color: #ffdfba;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .referral-text {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .referral-details {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .referral-terms {
+    font-size: 10px;
+    color: #888888;
+  }
+  

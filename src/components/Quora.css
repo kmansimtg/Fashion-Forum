@@ -15,3 +15,7 @@
     justify-content: center;
     margin-top: 50px;
   }
+  .react-responsive-modal-overlay{
+    background-color: rgb(0 0 0/ 75%);
+
+  }

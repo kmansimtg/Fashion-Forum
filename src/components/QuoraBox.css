@@ -1,35 +1,71 @@
-.quoraBox {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    border: 1px solid lightgray;
-    background-color: white;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .quoraBox:hover {
-    border: 1px solid rgb(175, 175, 175);
-  }
-  
-  .quoraBox__info {
-    display: flex;
-    align-items: center;
-  }
-  
-  .quoraBox__info > h5 {
-    color: rgb(129, 129, 129);
-    font-weight: 300;
-    margin-left: 10px;
-  }
-  
-  .quoraBox__quora {
-    display: flex;
-    margin-top: 8px;
-  }
-  
-  .quoraBox__quora > p {
-    color: gray;
-    font-weight: bold;
-    font-size: large;
-  }
+
+.box {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  width: 864px;
+  margin: auto;
+  background-color: #fff;
+}
+
+.inputSection {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profilePhoto {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.inputField {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #dfdddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.buttonSection {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.askButton,
+.answerButton,
+.postButton {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.askIcon {
+  margin-right: 5px;
+  color: red;
+  font-size: 18px;
+}
+
+.answerIcon {
+  margin-right: 5px;
+  color: green;
+  font-size: 18px;
+}
+
+.postIcon {
+  margin-right: 5px;
+  color: blue;
+  font-size: 18px;
+}
+
+
+

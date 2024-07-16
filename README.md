@@ -1,3 +1,11 @@
+# PPT LINK
+https://docs.google.com/presentation/d/1UUobIHOIAHOEDYFSKHOHXROartg8Ibxx/edit?usp=sharing&ouid=115854760666910200002&rtpof=true&sd=true
+
+# UI DESIGN FIGMA FILE LINK
+https://www.figma.com/design/UsGVQawwAnuWPyK1mlRfvL/Untitled?node-id=0-1&t=AFMAFwG8isy6tbpv-1
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

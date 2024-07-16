@@ -6,10 +6,12 @@ import PeopleAltOutlinedIcon from "@material-ui/icons/PeopleAltOutlined";
 import NotificationsOutlinedIcon from "@material-ui/icons/NotificationsOutlined";
 import SearchIcon from "@material-ui/icons/Search";
 import LanguageIcon from "@material-ui/icons/Language";
-//import Modal from "react-modal";
-import fasfor from './Images/forum.png'
+import CloseIcon from "@material-ui/icons/Close";
+import {Modal} from "react-responsive-modal";
+import fasfor from './Images/forum.png';
 import "./QHeader.css";
 import { Avatar, Button, Input } from "@material-ui/core";
+import "react-responsive-modal/styles.css"
 // import { useSelector } from "react-redux";
 // import { selectUser } from "../features/userSlice";
 // import db, { auth } from "../firebase";
@@ -21,9 +23,10 @@ import { ExpandMore, Link } from "@material-ui/icons";
 function QHeader() {
   // const user = useSelector(selectUser);
 
-  // const [IsmodalOpen, setIsModalOpen] = useState(false);
+  const [IsmodalOpen, setIsModalOpen] = useState(false);
+  const Close=(<CloseIcon></CloseIcon>)
   // const [input, setInput] = useState("");
-  // const [inputUrl, setInputUrl] = useState("");
+  const [inputUrl, setInputUrl] = useState("");
   // const questionName = input;
 
   // const handleQuestion = (e) => {
@@ -87,12 +90,15 @@ function QHeader() {
         </div>
         <LanguageIcon />
         <Button 
-        // onClick={() => setIsModalOpen(true)}
+        onClick={() => setIsModalOpen(true)}
         >Add Question</Button>
-        {/* <Modal
-          isOpen={IsmodalOpen}
-          onRequestClose={() => setIsModalOpen(false)}
-          shouldCloseOnOverlayClick={false}
+        <Modal
+          open={IsmodalOpen}
+          closeIcon={Close}
+        onClose={() => setIsModalOpen(false)}
+          closeOnEsc
+          
+          closeOnOverlayClick={false}
           style={{
             overlay: {
               width: 700,
@@ -113,13 +119,13 @@ function QHeader() {
           <div className="modal__info">
             <Avatar
               className="avatar"
-              src={
-                user.photo
-                  ? user.photo
-                  : "https://images-platform.99static.com//_QXV_u2KU7-ihGjWZVHQb5d-yVM=/238x1326:821x1909/fit-in/500x500/99designs-contests-attachments/119/119362/attachment_119362573"
-              }
+              // src={
+              //   user.photo
+              //     ? user.photo
+              //     : "https://images-platform.99static.com//_QXV_u2KU7-ihGjWZVHQb5d-yVM=/238x1326:821x1909/fit-in/500x500/99designs-contests-attachments/119/119362/attachment_119362573"
+              // }
             />
-            <p>{user.disPlayName ? user.disPlayName : user.email} asked</p>
+            {/* <p>{user.disPlayName ? user.disPlayName : user.email} asked</p> */}
             <div className="modal__scope">
               <PeopleAltOutlinedIcon />
               <p>Public</p>
@@ -128,30 +134,37 @@ function QHeader() {
           </div>
           <div className="modal__Field">
             <Input
-              value={input}
-              onChange={(e) => setInput(e.target.value)}
-              type="text"
+         type="text"
               placeholder="Start your question with 'What', 'How', 'Why', etc. "
             />
-            <div className="modal__fieldLink">
-              <Link />
-              <input
-                value={inputUrl}
-                onChange={(e) => setInputUrl(e.target.value)}
-                type="text"
-                placeholder="Optional: inclue a link that gives context"
-              ></input>
+            <div style={{display:"flex",flexDirection:"column"}}>
+              <input type="text" value={inputUrl} onChange={(e)=>setInputUrl(e.target.value)}
+              style={{
+                margin:"5px 0",
+                border:"1px solid lightgrey",
+                padding:"10px ",
+                outline:"2px solid black #000",
+             }}
+               placeholder="Optional: inclue a link that gives context"/>
+               {
+                inputUrl !== "" &&<img style={{
+                  height:"40vh",objectFit:"contain"
+                }}
+                src={inputUrl} alt="image"/> 
+               }
+               
             </div>
+            
           </div>
           <div className="modal__buttons">
             <button className="cancle" onClick={() => setIsModalOpen(false)}>
               Cancel
             </button>
-            <button type="sumbit" onClick={handleQuestion} className="add">
+            <button type="submit"  className="add">
               Add Question
             </button>
           </div>
-        </Modal> */}
+        </Modal>
       </div>
       
     </div>
